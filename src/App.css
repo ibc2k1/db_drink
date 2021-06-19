@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+nav{
+  font-family: 'Sriracha', cursive;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgba(244, 249, 253, 0.76);
+}
+
+body {
+  background-image: linear-gradient(to top, #fff1eb 30%, #ace0f9 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height:100vh;
+}

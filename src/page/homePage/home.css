@@ -1,0 +1,29 @@
+@font-face {
+    font-family:ArchitectsDaughter-Regular;
+    src: url(font/ArchitectsDaughter-Regular.ttf);
+  }
+  @font-face {
+    font-family: PatrickHand-Regular;
+    src: url(font/PatrickHand-Regular.ttf);
+  }
+
+.back{
+    background:url("drink.jpg");
+    background-size:100%;
+    opacity:0.8;
+    position: relative;
+}
+.tittle{
+    position: relative;
+    font-family:ArchitectsDaughter-Regular;
+    text-decoration:underline;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 20%;
+    min-height: 100%;
+    align-items: center;
+    padding:30%;
+
+}
