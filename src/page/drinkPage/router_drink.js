@@ -4,38 +4,41 @@ import { Link } from "react-router-dom";
 import { RestaurantMenu } from "@material-ui/icons";
 
 
-
 export default function Router_drink() {
+  
   return (
     
       <div className="drinkType">
         <center><tr>
-          <Link to="/blacktea">
+          <Link to="/allblacktea">
          
           <Button onclick="style.display = 'none'">紅茶</Button>
           </Link>
-          <Link to="/greentea">
+          <Link to="/allgreentea">
             <Button>綠茶</Button>
           </Link>
-          <Link to="/oolong">
+          <Link to="/alloolong">
             <Button>烏龍茶</Button>
           </Link>
-          <Link to="/milk">
+          <Link to="/allmilk">
             <Button>奶類</Button>
           </Link>
         </tr></center>
         <center><tr>
-          <Link to="/coffee">
+          <Link to="/allcoffee">
             <Button>咖啡</Button>
           </Link>
-          <Link to="/fruit">
+          <Link to="/allfruit">
             <Button>水果</Button>
           </Link>
-          <Link to="/smoothie">
+          <Link to="/allsmoothie">
             <Button>冰沙</Button>
           </Link>
-          <Link to="/else">
+          <Link to="/allelse">
             <Button>其他</Button>
+          </Link>
+          <Link to="/allelsetea">
+            <Button>其他茶</Button>
           </Link>
         </tr></center>
       </div>

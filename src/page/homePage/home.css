@@ -9,10 +9,13 @@
 
 .back{
     background:url("drink.jpg");
-    background-size:100%;
+    background-size:70%;
+    background-position:top;
+    background-repeat:no-repeat;
     opacity:0.8;
     position: relative;
 }
+
 .tittle{
     position: relative;
     font-family:ArchitectsDaughter-Regular;
@@ -20,7 +23,7 @@
 
     display: flex;
     flex-direction: column;
-
+   
     min-width: 20%;
     min-height: 100%;
     align-items: center;

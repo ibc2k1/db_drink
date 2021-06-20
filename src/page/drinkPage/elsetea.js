@@ -8,11 +8,11 @@ import InfoIcon from '@material-ui/icons/Info';
 import $ from "jquery";
 import { Link } from "react-router-dom";
 
-const itemDataFru = [];
+const itemDataElsetea = [];
   
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_drink_fruit.php',
+    url: 'http://54.88.4.245/api_drink_othertea.php',
     type: 'post',
     cache: false,
     async: false,
@@ -29,7 +29,7 @@ const itemDataFru = [];
             title : item.D_NAME,
             id : item.D_ID,
           }
-          itemDataFru.push(inner);
+          itemDataElsetea.push(inner);
         });
       }
     }
@@ -38,7 +38,7 @@ const itemDataFru = [];
 export default function TitlebarImageList() {
   return (
     <center><ImageList sx={{ width: 1000, height: 850 }} cols={5} gap={8}>
-      {itemDataFru.map((item) => (
+      {itemDataElsetea.map((item) => (
         <ImageListItem key={item.img}>
           <img
             srcSet={`${item.img}?w=248&fit=crop&auto=format 1x,
@@ -51,10 +51,10 @@ export default function TitlebarImageList() {
             title={item.title}
             subtitle={item.author}
             actionIcon={
-              <div className="links">
+                <div className="links">
                 <div className="storeChange">
-                  <Link to={`/fruit/${item.id}`}>
-                  <IconButton component={Link} to={`/fruit/${item.id}`}
+                  <Link to={`/elsetea/${item.id}`}>
+                  <IconButton component={Link} to={`/elsetea/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

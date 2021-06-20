@@ -6,12 +6,13 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import $ from "jquery";
+import { Link } from "react-router-dom";
 
-const itemData = [];
+const itemDataBlack = [];
   
   $.ajax(
   {
-    url: 'http://54.236.30.124/api_drink_type.php',
+    url: 'http://54.88.4.245/api_drink_blacktea.php',
     type: 'post',
     cache: false,
     async: false,
@@ -26,17 +27,24 @@ const itemData = [];
           {
             img : item.Picture,
             title : item.D_NAME,
+            id : item.D_ID,
           }
-          itemData.push(inner);
+          itemDataBlack.push(inner);
         });
       }
     }
   });
 
+export function aStore(id) {
+  window.console.log("click");
+  window.console.log(id);
+  return id;
+}
+
 export default function TitlebarImageList() {
   return (
-    <center><ImageList sx={{ width: 1000, height: 545 }} cols={5}>
-      {itemData.map((item) => (
+    <center><ImageList sx={{ width: 1000, height: 850 }} cols={5} gap={8}>
+      {itemDataBlack.map((item) => (
         <ImageListItem key={item.img}>
           <img
             srcSet={`${item.img}?w=248&fit=crop&auto=format 1x,
@@ -49,13 +57,20 @@ export default function TitlebarImageList() {
             title={item.title}
             subtitle={item.author}
             actionIcon={
-              <IconButton
-                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                aria-label={`info about ${item.title}`}
-                onClick="window.location.href='URL?id=11'"
-              >
+              <div className="links">
+                <div className="blackteachange">
+                  <Link to={`/blacktea/${item.id}`}>
+                    <IconButton component={Link} to={`/blacktea/${item.id}`}
+                      sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                      aria-label={`info about ${item.title}`}
+                      onClick={ () => { aStore(item.id);} }
+                    >
                 <InfoIcon />
               </IconButton>
+                  </Link>
+                </div>
+              </div>
+              
             }
           />
         </ImageListItem>

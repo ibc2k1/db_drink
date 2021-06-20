@@ -1,0 +1,57 @@
+.drinkimg{
+    max-width:40%;
+    display:block;
+    top: 50%;
+    margin: 0 auto;
+    position:relative;
+    top:5px;
+    right:300px;
+    
+}
+
+table.tb1 {
+    border-collapse: collapse;
+    position:absolute;
+    top:300px;
+    right:200px;
+  }
+
+  table.tb2 {
+    border-collapse: collapse;
+    position:absolute;
+    top:150px;
+    right:200px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    width: 28.5%;
+} 
+
+p{
+    position:absolute;
+    top:150px;
+    right:500px;
+}
+
+.hopebt{
+  max-width:40%;
+  display:block;
+  top: 50%;
+  margin: 0 auto;
+  position:absolute;
+  top:500px;
+  left:480px;
+  
+}
+
+.drinkbt{
+  max-width:40%;
+  display:block;
+  top: 50%;
+  margin: 0 auto;
+  position:absolute;
+  top:500px;
+  left:400px;
+  
+}

@@ -2,11 +2,11 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 
-export default function Router_s() {
+export default function Router_s({ match }) {
   return (
     <div className="links">
       <div className="header">
-        <Link to="/introduce">
+        <Link to='/introduce'>
           <Button>品牌介紹</Button>
         </Link>
         <Link to="/branch">
