@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/db_drink/static/css/main.cde1b3d7.chunk.css",
+    "main.js": "/db_drink/static/js/main.cd10d684.chunk.js",
+    "main.js.map": "/db_drink/static/js/main.cd10d684.chunk.js.map",
+    "runtime-main.js": "/db_drink/static/js/runtime-main.244ab6ba.js",
+    "runtime-main.js.map": "/db_drink/static/js/runtime-main.244ab6ba.js.map",
+    "static/js/2.264c7f53.chunk.js": "/db_drink/static/js/2.264c7f53.chunk.js",
+    "static/js/2.264c7f53.chunk.js.map": "/db_drink/static/js/2.264c7f53.chunk.js.map",
+    "static/js/3.91cc3555.chunk.js": "/db_drink/static/js/3.91cc3555.chunk.js",
+    "static/js/3.91cc3555.chunk.js.map": "/db_drink/static/js/3.91cc3555.chunk.js.map",
+    "index.html": "/db_drink/index.html",
+    "static/css/main.cde1b3d7.chunk.css.map": "/db_drink/static/css/main.cde1b3d7.chunk.css.map",
+    "static/js/2.264c7f53.chunk.js.LICENSE.txt": "/db_drink/static/js/2.264c7f53.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/db_drink/static/media/drink.c32008dd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.244ab6ba.js",
+    "static/js/2.264c7f53.chunk.js",
+    "static/css/main.cde1b3d7.chunk.css",
+    "static/js/main.cd10d684.chunk.js"
+  ]
+}
