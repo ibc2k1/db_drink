@@ -25,6 +25,9 @@ export default function Router_c() {
         <Link to="/List">
           <Button>心願清單</Button>
         </Link>
+        <Link to="/Manage">
+          <Button>管理者介面</Button>
+        </Link>
       </div>
     </nav>
   );

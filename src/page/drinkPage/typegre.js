@@ -3,7 +3,7 @@ import './adrink.css'
 import $ from "jquery";
 
 
-export default function DrinkExample (){
+export default function Typegre (){
 
 var pathname = window.location.pathname.split( '/' );
 
@@ -11,10 +11,10 @@ var drinkid = pathname[2];
 
 var num = 0;
 
-const itemDataBlack =[];
+const itemDataGre =[];
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_drink_intro.php ',
+    url: ' http://54.88.4.245/api/drink/greentea_intro.php  ',
     type: 'post',
     cache: false,
     async: false,
@@ -37,7 +37,7 @@ const itemDataBlack =[];
                     pri : item.Price,
                 }
                 num=num+1;
-                itemDataBlack.push(inner);
+                itemDataGre.push(inner);
             }
           
         });
@@ -49,7 +49,7 @@ var countfact = 0;
 const allfact = [];
 $.ajax(
     {
-      url: 'http://54.88.4.245/api_drink_fact.php ',
+      url: 'http://54.88.4.245/api/drink/greentea_fact.php ',
       type: 'post',
       cache: false,
       async: false,
@@ -92,20 +92,20 @@ $.ajax(
 
 
     for(var i=0;i<num;i++){
-        var pic=itemDataBlack[i].img;
+        var pic=itemDataGre[i].img;
     }
     
     console.log("drinkid", drinkid);
-    console.log(itemDataBlack[0]);
+    console.log(itemDataGre[0]);
 
     return (
       <>
         
-        <h1>{itemDataBlack[0].title}</h1>
+        <h1>{itemDataGre[0].title}</h1>
 
         <input type='button' value='加入心願清單' className="hopebt"  />
         <div>
-        <img className="drinkimg" src={itemDataBlack[0].img} />
+        <img className="drinkimg" src={itemDataGre[0].img} />
         </div>
        
        <h4>原料:{type[0]} {type[1]} {type[2]} {type[3]} {type[4]} {type[5]} {type[6]} {type[7]}</h4>
@@ -121,14 +121,14 @@ $.ajax(
             <th>價錢</th>
         </tr>
         <tr>
-            <td>{itemDataBlack[0].vol}</td>
-            <td>{itemDataBlack[0].cal}cal</td>
-            <td>${itemDataBlack[0].pri}</td>
+            <td>{itemDataGre[0].vol}</td>
+            <td>{itemDataGre[0].cal}cal</td>
+            <td>${itemDataGre[0].pri}</td>
         </tr>
         <tr>
-            <td>{itemDataBlack[1].vol}</td>
-            <td>{itemDataBlack[1].cal}cal</td>
-            <td>${itemDataBlack[1].pri}</td>
+            <td></td>
+            <td>cal</td>
+            <td>$</td>
         </tr>
         </table>
         

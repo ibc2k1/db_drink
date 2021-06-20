@@ -1,0 +1,12 @@
+.word{
+    position:absolute;
+    top:250px;
+    right:250px;
+    width: 500px;
+	height: 100px;
+}
+
+.storepic{
+    position:relative;
+    right:300px;
+}

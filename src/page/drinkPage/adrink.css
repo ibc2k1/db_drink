@@ -1,7 +1,7 @@
 .drinkimg{
-    max-width:40%;
+    max-width:20%;
     display:block;
-    top: 50%;
+    top: 10%;
     margin: 0 auto;
     position:relative;
     top:5px;
@@ -16,22 +16,20 @@ table.tb1 {
     right:200px;
   }
 
-  table.tb2 {
-    border-collapse: collapse;
-    position:absolute;
-    top:150px;
-    right:200px;
-  }
 
   table, th, td {
     border: 1px solid black;
     width: 28.5%;
 } 
 
-p{
-    position:absolute;
-    top:150px;
-    right:500px;
+h4{
+  display : flex;
+  position:absolute;
+  top:200px;
+  right:200px;
+  justify-content:space-between;
+  width: 500px;
+	height: 100px;
 }
 
 .hopebt{
@@ -39,9 +37,9 @@ p{
   display:block;
   top: 50%;
   margin: 0 auto;
-  position:absolute;
-  top:500px;
-  left:480px;
+  position:relative;
+  top:300px;
+  left:300px;
   
 }
 
@@ -54,4 +52,9 @@ p{
   top:500px;
   left:400px;
   
+}
+
+.detail{
+  align-items: center;
+  padding:20px;
 }

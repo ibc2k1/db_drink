@@ -20,6 +20,19 @@ import StoreDetail from "./page/storePage/storedetail"
 import aStore from "./page/storePage/store"
 import Router_s from "./page/storePage/router_store"
 import DrinkExample from "./page/drinkPage/adrink"
+import Manage from "./page/ManagePage/manage"
+import Typeblack from "./page/drinkPage/typeblack"
+import Typecof from "./page/drinkPage/typecof"
+import Typeelse from "./page/drinkPage/typeelse"
+import Typeeltea from "./page/drinkPage/typeeltea"
+import Typefru from "./page/drinkPage/typefru"
+import Typegre from "./page/drinkPage/typegre"
+import Typemilk from "./page/drinkPage/typemilk"
+import Typeoo from "./page/drinkPage/typeoo"
+import Typesmo from "./page/drinkPage/typesmo"
+import Branch from "./page/storePage/branch"
+import Introduce from "./page/storePage/introduce"
+import Menu from "./page/storePage/menu"
 
 export default function App() {
   console.log("hi");
@@ -46,12 +59,19 @@ export default function App() {
 
           <Route path='/storedetail/:id'>
             <Router_c/>
-            <Router_s/>
+            <Introduce/>
+            <Branch/>
+            <Menu/>
           </Route>
 
           
           <Route path="/SignIn" >
             <SignIn/>
+          </Route>
+
+          <Route path="/Manage" >
+            <Router_c/>
+            <Manage/>
           </Route>
 
           <Route path="/List" >
@@ -66,7 +86,7 @@ export default function App() {
 
           <Route path='/blacktea/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typeblack/>
           </Route>
 
           <Route path="/allgreentea" >
@@ -76,7 +96,7 @@ export default function App() {
 
           <Route path='/greentea/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typegre/>
           </Route>
 
           <Route path="/alloolong" >
@@ -86,7 +106,7 @@ export default function App() {
 
           <Route path='/oolong/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typeoo/>
           </Route>
           
           <Route path="/allmilk" >
@@ -96,7 +116,7 @@ export default function App() {
 
           <Route path='/milk/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typemilk/>
           </Route>
 
           <Route path="/allcoffee" >
@@ -106,7 +126,7 @@ export default function App() {
 
           <Route path='/coffee/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typecof/>
           </Route>
 
           <Route path="/allfruit" >
@@ -116,7 +136,7 @@ export default function App() {
 
           <Route path='/fruit/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typefru/>
           </Route>
           
           <Route path="/allsmoothie" >
@@ -126,7 +146,7 @@ export default function App() {
 
           <Route path='/smoothie/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typesmo/>
           </Route>
 
           <Route path="/allelse" >
@@ -136,7 +156,7 @@ export default function App() {
 
           <Route path='/else/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typeelse/>
           </Route>
 
           <Route path="/allelsetea" >
@@ -146,7 +166,7 @@ export default function App() {
 
           <Route path='/elsetea/:id'>
             <Router_c/>
-            <DrinkExample/>
+            <Typeeltea/>
           </Route>
         
       </div>

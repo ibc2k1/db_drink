@@ -37,7 +37,7 @@ const itemDataOolong = [];
 
 export default function TitlebarImageList() {
   return (
-    <center><ImageList sx={{ width: 1000, height: 850 }} cols={5} gap={8}>
+    <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataOolong.map((item) => (
         <ImageListItem key={item.img}>
           <img

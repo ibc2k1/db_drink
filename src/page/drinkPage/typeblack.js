@@ -3,7 +3,7 @@ import './adrink.css'
 import $ from "jquery";
 
 
-export default function DrinkExample (){
+export default function Typeblack (){
 
 var pathname = window.location.pathname.split( '/' );
 
@@ -14,7 +14,7 @@ var num = 0;
 const itemDataBlack =[];
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_drink_intro.php ',
+    url: 'http://54.88.4.245/api/drink/blacktea_intro.php ',
     type: 'post',
     cache: false,
     async: false,
@@ -49,7 +49,7 @@ var countfact = 0;
 const allfact = [];
 $.ajax(
     {
-      url: 'http://54.88.4.245/api_drink_fact.php ',
+      url: 'http://54.88.4.245/api/drink/blacktea_fact.php ',
       type: 'post',
       cache: false,
       async: false,
@@ -126,9 +126,9 @@ $.ajax(
             <td>${itemDataBlack[0].pri}</td>
         </tr>
         <tr>
-            <td>{itemDataBlack[1].vol}</td>
-            <td>{itemDataBlack[1].cal}cal</td>
-            <td>${itemDataBlack[1].pri}</td>
+            <td></td>
+            <td>cal</td>
+            <td>$</td>
         </tr>
         </table>
         

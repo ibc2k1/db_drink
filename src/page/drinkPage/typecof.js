@@ -3,7 +3,7 @@ import './adrink.css'
 import $ from "jquery";
 
 
-export default function DrinkExample (){
+export default function Typecof (){
 
 var pathname = window.location.pathname.split( '/' );
 
@@ -11,10 +11,10 @@ var drinkid = pathname[2];
 
 var num = 0;
 
-const itemDataBlack =[];
+const itemDataCof =[];
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_drink_intro.php ',
+    url: 'http://54.88.4.245/api/drink/coffee_intro.php  ',
     type: 'post',
     cache: false,
     async: false,
@@ -37,7 +37,7 @@ const itemDataBlack =[];
                     pri : item.Price,
                 }
                 num=num+1;
-                itemDataBlack.push(inner);
+                itemDataCof.push(inner);
             }
           
         });
@@ -49,7 +49,7 @@ var countfact = 0;
 const allfact = [];
 $.ajax(
     {
-      url: 'http://54.88.4.245/api_drink_fact.php ',
+      url: 'http://54.88.4.245/api/drink/coffee_fact.php ',
       type: 'post',
       cache: false,
       async: false,
@@ -92,46 +92,46 @@ $.ajax(
 
 
     for(var i=0;i<num;i++){
-        var pic=itemDataBlack[i].img;
+        var pic=itemDataCof[i].img;
     }
     
     console.log("drinkid", drinkid);
-    console.log(itemDataBlack[0]);
+    console.log(itemDataCof[0]);
 
     return (
       <>
         
-        <h1>{itemDataBlack[0].title}</h1>
+        <h1>{itemDataCof[0].title}</h1>
 
         <input type='button' value='加入心願清單' className="hopebt"  />
         <div>
-        <img className="drinkimg" src={itemDataBlack[0].img} />
+        <img className="drinkimg" src={itemDataCof[0].img} />
         </div>
-       
-       <h4>原料:{type[0]} {type[1]} {type[2]} {type[3]} {type[4]} {type[5]} {type[6]} {type[7]}</h4>
+       <div className="detail">
+        <h4>原料:{type[0]} {type[1]} {type[2]} {type[3]} {type[4]} {type[5]} {type[6]} {type[7]}</h4>
 
-        <table class="tb1">
-        <colgroup span="3"></colgroup>
-        <tr>
-            <th id="name" colspan="3">商品資訊</th>
-        </tr>
-        <tr>
-            <th>容量</th>
-            <th>熱量</th>
-            <th>價錢</th>
-        </tr>
-        <tr>
-            <td>{itemDataBlack[0].vol}</td>
-            <td>{itemDataBlack[0].cal}cal</td>
-            <td>${itemDataBlack[0].pri}</td>
-        </tr>
-        <tr>
-            <td>{itemDataBlack[1].vol}</td>
-            <td>{itemDataBlack[1].cal}cal</td>
-            <td>${itemDataBlack[1].pri}</td>
-        </tr>
-        </table>
-        
+          <table class="tb1">
+          <colgroup span="3"></colgroup>
+          <tr>
+              <th id="name" colspan="3">商品資訊</th>
+          </tr>
+          <tr>
+              <th>容量</th>
+              <th>熱量</th>
+              <th>價錢</th>
+          </tr>
+          <tr>
+              <td>{itemDataCof[0].vol}</td>
+              <td>{itemDataCof[0].cal}cal</td>
+              <td>${itemDataCof[0].pri}</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>cal</td>
+              <td>$</td>
+          </tr>
+          </table>
+        </div>
       </>
     )
   }
