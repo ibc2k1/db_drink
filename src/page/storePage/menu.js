@@ -17,45 +17,6 @@ import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
 
 
-var pathname = window.location.pathname.split( '/' );
-
-var store = pathname[2];
-
-var num = 0;
-
-const itemDataBlack = [];
-
-$.ajax(
-{
-  url: 'http://54.88.4.245/api_store_menu.php',
-  type: 'post',
-  cache: false,
-  async: false,
-  dataType: 'json',
-  success: function(data)
-  {
-    if(data)
-    {
-      $.each(data, function(i, item)
-      {
-        if(item.S_ID === store)
-        {
-          var inner = 
-          {
-            id:item.S_ID,
-            did:item.D_ID,
-            drink:item.D_Name,
-            Img:item.Picture,
-          }
-          num=num+1;
-          itemDataBlack.push(inner);
-        }
-      });
-    }
-  }
-});
-
-
 const Styles = theme => ({
   root: {
     width: '100%',
@@ -84,6 +45,44 @@ export default function Menu() {
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
+
+    var pathname = window.location.pathname.split( '/' );
+
+    var store = pathname[2];
+
+    var num = 0;
+
+    const itemDataBlack = [];
+
+    $.ajax(
+    {
+      url: 'http://54.88.4.245/api_store_menu.php',
+      type: 'post',
+      cache: false,
+      async: false,
+      dataType: 'json',
+      success: function(data)
+      {
+        if(data)
+        {
+          $.each(data, function(i, item)
+          {
+            if(item.S_ID === store)
+            {
+              var inner = 
+              {
+                id:item.S_ID,
+                did:item.D_ID,
+                drink:item.D_Name,
+                Img:item.Picture,
+              }
+              num=num+1;
+              itemDataBlack.push(inner);
+            }
+          });
+        }
+      }
+    });
 
     console.log(itemDataBlack[0].tittle)
     console.log(store)

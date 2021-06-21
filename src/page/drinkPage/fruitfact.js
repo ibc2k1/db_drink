@@ -61,16 +61,18 @@ export default function Fruitfact() {
 
     return (
         <div className={classes.root}>
-            <h4>原料:</h4>
-                <ImageList className="fact" sx={{ width:"23%", height:"20%" }} cols={4}>
+            <div className="adrinkfact">
+            <h2>原料:&emsp;</h2>
+                
 
                     {drinkData.map((item) => (
+                        
                         <div>
-                            <p>{item.fact} </p>
+                            <h2>{item.fact}&emsp;</h2>
                         </div>
                     ))}
-                </ImageList >
-            
+                
+                </div>
 
         
         </div>

@@ -73,6 +73,7 @@ export default function App() {
 
           <Route path="/Store_c" >
             <Router_c/>
+            <h1>請選擇店家!</h1>
             <Store_c/>
           </Route>
 
@@ -83,63 +84,63 @@ export default function App() {
             <Menu/>
           </Route>
 
-          
-          <Route path="/SignIn" >
-            <SignIn/>
-          </Route>
 
           <Route path="/Manage" >
             <Router_c/>
             <Manage/>
           </Route>
-
-          <Route path="/List" >
-            <Router_c/>
-            <List/>
-          </Route>
           
           <Route path="/allblacktea" >
             <Router_c/>
+            <Router_drink/>
             <Blacktea/>
           </Route>
 
           <Route path="/allgreentea" >
             <Router_c/>
+            <Router_drink/>
             <Greentea/>
           </Route>
 
           <Route path="/alloolong" >
             <Router_c/>
+            <Router_drink/>
             <Oolong/>
           </Route>
           
           <Route path="/allmilk" >
             <Router_c/>
+            <Router_drink/>
             <Milk/>
           </Route>
 
           <Route path="/allcoffee" >
             <Router_c/>
+            <Router_drink/>
             <Coffee/>
           </Route>
 
           <Route path="/allfruit" >
             <Router_c/>
+            <Router_drink/>
             <Fruit/>
           </Route>
           
           <Route path="/allsmoothie" >
             <Router_c/>
+            <Router_drink/>
             <Smoothie/>
           </Route>
 
           <Route path="/allelse" >
             <Router_c/>
+            <Router_drink/>
             <Else/>
           </Route>
 
           <Route path="/allelsetea" >
             <Router_c/>
+            <Router_drink/>
             <Elsetea/>
           </Route>
 

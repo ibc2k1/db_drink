@@ -1,12 +1,13 @@
-.word{
-    position:absolute;
-    top:250px;
-    right:250px;
-    width: 500px;
-	height: 100px;
+.INTRO{
+    text-align: left;
+    align-items: left;
 }
-
-.storepic{
-    position:relative;
-    right:300px;
+.Tittle{
+    text-align: left;
+    align-items: left;
+}
+.word{
+    text-align: left;
+    width: 800px;
+	height: 100px;
 }

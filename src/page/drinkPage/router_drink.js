@@ -9,6 +9,7 @@ export default function Router_drink() {
   return (
     
       <div className="drinkType">
+        <h1>請選擇飲料種類!</h1>
         <center><tr>
           <Link to="/allblacktea">
          
@@ -41,7 +42,6 @@ export default function Router_drink() {
             <Button>其他茶</Button>
           </Link>
         </tr></center>
-        <h1>請選擇飲料種類!</h1>
       </div>
     
   );

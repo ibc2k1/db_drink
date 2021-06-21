@@ -8,51 +8,42 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import "./storeintro.css";
 
-
-
-var pathname = window.location.pathname.split( '/' );
-
-var store = pathname[2];
-
-var num = 0;
-
-const itemDataBlack = [];
-
-$.ajax(
-{
-  url: 'http://54.88.4.245/api_store_name.php ',
-  type: 'post',
-  cache: false,
-  async: false,
-  dataType: 'json',
-  success: function(data)
-  {
-    if(data)
-    {
-      $.each(data, function(i, item)
-      {
-        if(item.S_ID === store)
-        {
-          var inner = 
-          {
-            id:item.S_ID,
-            tittle:item.S_name,
-            intro:item.desc,
-            Img:item.img,
-          }
-          num=num+1;
-          itemDataBlack.push(inner);
-        }
-      });
-    }
-  }
-});
-
 export default function StoreIntro() {
 
-  for(var i=0;i<num;i++){
-    var pic=itemDataBlack[i].img;
-  }
+  var pathname = window.location.pathname.split( '/' );
+
+  var store = pathname[2];
+
+  const itemDataBlack = [];
+
+  $.ajax(
+  {
+    url: 'http://54.88.4.245/api_store_name.php ',
+    type: 'post',
+    cache: false,
+    async: false,
+    dataType: 'json',
+    success: function(data)
+    {
+      if(data)
+      {
+        $.each(data, function(i, item)
+        {
+          if(item.S_ID === store)
+          {
+            var inner = 
+            {
+              id:item.S_ID,
+              tittle:item.S_name,
+              intro:item.desc,
+              Img:item.img,
+            }
+            itemDataBlack.push(inner);
+          }
+        });
+      }
+    }
+  });
 
   return (
     <div class="INTRO">

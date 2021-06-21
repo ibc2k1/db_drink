@@ -43,7 +43,7 @@ export function aStore(id) {
     return id;
 }
 
-export default function TitlebarImageList() {
+export default function Store_c() {
   return (
     <center><ImageList sx={{ width: 1000, height: 850 }} cols={4} gap={8}>
       {itemDataShop.map((item) => (

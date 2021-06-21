@@ -19,12 +19,6 @@ export default function Router_c() {
         <Link to="/Store_c">
           <Button>店家</Button>
         </Link>
-        <Link to="/SignIn">
-          <Button>登入</Button>
-        </Link>
-        <Link to="/List">
-          <Button>心願清單</Button>
-        </Link>
         <Link to="/Manage">
           <Button>管理者介面</Button>
         </Link>

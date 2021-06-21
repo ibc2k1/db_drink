@@ -7,6 +7,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import './storeintro.css'
 
 const Styles = theme => ({
   root: {
@@ -23,54 +24,6 @@ const Styles = theme => ({
   },
 });
 
-var pathname = window.location.pathname.split( '/' );
-
-var store = pathname[2];
-
-
-var num = 0;
-const storeData = [];
-$.ajax(
-{
-    url: 'http://54.88.4.245/api_branch.php ',
-    type: 'post',
-    cache: false,
-    async: false,
-    dataType: 'json',
-    success: function(data)
-    {
-        if(data)
-        {
-            $.each(data, function(i, item)
-            {
-                if(item.S_ID === store)
-                {
-                    var inner = 
-                    {
-                        id:item.S_ID,
-                        name:item.B_Name,
-                        tel:item.Phone,
-                        map:item.Google_Map,
-                        block:item.Area,
-                        location:item.Address,
-                        mont:item.Mon,
-                        tuet:item.Tue,
-                        wedt:item.Wed,
-                        thut:item.Thu,
-                        frit:item.Fri,
-                        satt:item.Sat,
-                        sunt:item.Sun,
-                    }
-                    num=num+1;
-                    storeData.push(inner);
-                }
-            });
-        }
-    }
-});
-
-
-
 
 export default function Branch() {
     const classes = withStyles(Styles);
@@ -79,6 +32,51 @@ export default function Branch() {
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
+
+    var pathname = window.location.pathname.split( '/' );
+
+    var store = pathname[2];
+
+    var num = 0;
+    const storeData = [];
+    $.ajax(
+    {
+        url: 'http://54.88.4.245/api_branch.php ',
+        type: 'post',
+        cache: false,
+        async: false,
+        dataType: 'json',
+        success: function(data)
+        {
+            if(data)
+            {
+                $.each(data, function(i, item)
+                {
+                    if(item.S_ID === store)
+                    {
+                        var inner = 
+                        {
+                            id:item.S_ID,
+                            name:item.B_Name,
+                            tel:item.Phone,
+                            map:item.Google_Map,
+                            block:item.Area,
+                            location:item.Address,
+                            mont:item.Mon,
+                            tuet:item.Tue,
+                            wedt:item.Wed,
+                            thut:item.Thu,
+                            frit:item.Fri,
+                            satt:item.Sat,
+                            sunt:item.Sun,
+                        }
+                        num=num+1;
+                        storeData.push(inner);
+                    }
+                });
+            }
+        }
+    });
 
     console.log(store)  
 
