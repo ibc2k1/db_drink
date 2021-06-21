@@ -108,13 +108,7 @@ export default function Menu() {
                             actionIcon={
                                 <div className="links">
                                     <div className="storeChange">
-                                    <IconButton
-                                        sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                        aria-label={`info about ${item.drink}`} 
-                                        onClick={ () => { aStore(item.id);} }
-                                    >
-                                        <InfoIcon />
-                                    </IconButton>
+                                    
                                     </div>
                                 </div>
                             }

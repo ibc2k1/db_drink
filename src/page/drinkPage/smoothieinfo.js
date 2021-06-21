@@ -47,9 +47,7 @@ export default function Smoothieinfo() {
         <div>
             <h1>{drinkDataB[0].name}</h1>
             <img className="drinkimg" src={drinkDataB[0].img} width="20%"/>
-            <Link to={`/storedetail/${drinkDataB[0].sid}`}>
-                <Button className="shop">查看店家</Button>
-            </Link>
+            
             <table class="tb1">
             <tr>
             <th id="name" colspan="3">商品資訊</th>
