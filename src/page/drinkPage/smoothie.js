@@ -53,8 +53,8 @@ export default function Smoothie() {
             actionIcon={
               <div className="links">
                 <div className="storeChange">
-                  <Link to={`/Smoothie/${item.id}`}>
-                  <IconButton component={Link} to={`/Smoothie/${item.id}`}
+                  <Link to={`/smoothie/${item.id}`}>
+                  <IconButton component={Link} to={`/smoothie/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

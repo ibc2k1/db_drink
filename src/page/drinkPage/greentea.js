@@ -53,8 +53,8 @@ export default function Greentea() {
             actionIcon={
               <div className="links">
                 <div className="greenteachange">
-                  <Link to = {`/Greentea/${item.id}`}>
-                  <IconButton component={Link} to={`/Greentea/${item.id}`}
+                  <Link to = {`/greentea/${item.id}`}>
+                  <IconButton component={Link} to={`/greentea/${item.id}`}
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`}
                   >

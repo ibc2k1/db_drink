@@ -143,61 +143,55 @@ export default function App() {
             <Elsetea/>
           </Route>
 
-          <Route path='/Blacktea/:id'>
+          <Route path='/blacktea/:id'>
             <Router_c/>
             <Blackteafact/>
             <Blackinfo/>
             </Route>
 
-            <Route path='/Greentea/:id'>
+            <Route path='/greentea/:id'>
             <Router_c/>
             <Grefact/>
             <Greeninfo/>
             </Route>
 
-            <Route path='/Oolong/:id'>
+            <Route path='/oolong/:id'>
             <Router_c/>
             <Oolongfact/>
             <Oolonginfo/>
             </Route>
-
-            <Route path='/Oolong/:id'>
-            <Router_c/>
-            <Oolongfact/>
-            <Oolonginfo/>
-            </Route>
-
-            <Route path='/Coffee/:id'>
+            
+            <Route path='/coffee/:id'>
             <Router_c/>
             <Coffeefact/>
             <Coffeeinfo/>
             </Route>
 
-            <Route path='/Else/:id'>
+            <Route path='/else/:id'>
             <Router_c/>
             <Elsefact/>
             <Elseinfo/>
             </Route>
 
-            <Route path='/Elsetea/:id'>
+            <Route path='/elsetea/:id'>
             <Router_c/>
             <Elseteafact/>
             <Elseteainfo/>
             </Route>
 
-            <Route path='/Fruit/:id'>
+            <Route path='/fruit/:id'>
             <Router_c/>
             <Fruitfact/>
             <Fruitinfo/>
             </Route>
         
-            <Route path='/Milk/:id'>
+            <Route path='/milk/:id'>
             <Router_c/>
             <Milkfact/>
             <Milkiofo/>
             </Route>
 
-            <Route path='/Smoothie/:id'>
+            <Route path='/smoothie/:id'>
             <Router_c/>
             <Smoothiefact/>
             <Smoothieinfo/>

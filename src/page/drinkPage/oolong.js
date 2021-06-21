@@ -53,8 +53,8 @@ export default function Oolong() {
             actionIcon={
               <div className="links">
                 <div className="storeChange">
-                  <Link to={`/Oolong/${item.id}`}>
-                  <IconButton component={Link} to={`/Oolong/${item.id}`}
+                  <Link to={`/oolong/${item.id}`}>
+                  <IconButton component={Link} to={`/oolong/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

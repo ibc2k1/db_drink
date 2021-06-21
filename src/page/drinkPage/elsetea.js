@@ -53,8 +53,8 @@ export default function Elsetea() {
             actionIcon={
                 <div className="links">
                 <div className="storeChange">
-                  <Link to={`/Elsetea/${item.id}`}>
-                  <IconButton component={Link} to={`/Elsetea/${item.id}`}
+                  <Link to={`/elsetea/${item.id}`}>
+                  <IconButton component={Link} to={`/elsetea/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

@@ -53,8 +53,8 @@ export default function Milk() {
             actionIcon={
               <div className="links">
                 <div className="storeChange">
-                  <Link to={`/Milk/${item.id}`}>
-                  <IconButton component={Link} to={`/Milk/${item.id}`}
+                  <Link to={`/milk/${item.id}`}>
+                  <IconButton component={Link} to={`/milk/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 
