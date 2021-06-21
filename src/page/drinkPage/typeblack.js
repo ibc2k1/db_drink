@@ -108,7 +108,7 @@ $.ajax(
         <img className="drinkimg" src={itemDataBlack[0].img} />
         </div>
        
-       <h4>原料:{type[0]} {type[1]} {type[2]} {type[3]} {type[4]} {type[5]} {type[6]} {type[7]}</h4>
+       <h4>原料:{allfact[0].fact} {type[1]} {type[2]} {type[3]} {type[4]} {type[5]} {type[6]} {type[7]}</h4>
 
         <table class="tb1">
         <colgroup span="3"></colgroup>

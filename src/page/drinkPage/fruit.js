@@ -35,7 +35,7 @@ const itemDataFru = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Fruit() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataFru.map((item) => (

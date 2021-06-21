@@ -35,7 +35,7 @@ const itemDataGre = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Greentea() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataGre.map((item) => (
@@ -53,8 +53,8 @@ export default function TitlebarImageList() {
             actionIcon={
               <div className="links">
                 <div className="greenteachange">
-                  <Link to = {`/greentea/${item.id}`}>
-                  <IconButton component={Link} to={`/greentea/${item.id}`}
+                  <Link to = {`/Greentea/${item.id}`}>
+                  <IconButton component={Link} to={`/Greentea/${item.id}`}
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`}
                   >

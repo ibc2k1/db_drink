@@ -35,7 +35,7 @@ const itemDataOolong = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Oolong() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataOolong.map((item) => (
@@ -53,8 +53,8 @@ export default function TitlebarImageList() {
             actionIcon={
               <div className="links">
                 <div className="storeChange">
-                  <Link to={`/oolong/${item.id}`}>
-                  <IconButton component={Link} to={`/oolong/${item.id}`}
+                  <Link to={`/Oolong/${item.id}`}>
+                  <IconButton component={Link} to={`/Oolong/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

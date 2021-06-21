@@ -35,7 +35,7 @@ const itemDataSmo = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Smoothie() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataSmo.map((item) => (
@@ -53,8 +53,8 @@ export default function TitlebarImageList() {
             actionIcon={
               <div className="links">
                 <div className="storeChange">
-                  <Link to={`/smoothie/${item.id}`}>
-                  <IconButton component={Link} to={`/smoothie/${item.id}`}
+                  <Link to={`/Smoothie/${item.id}`}>
+                  <IconButton component={Link} to={`/Smoothie/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

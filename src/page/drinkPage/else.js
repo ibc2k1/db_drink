@@ -35,7 +35,7 @@ const itemDataElse = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Else() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataElse.map((item) => (

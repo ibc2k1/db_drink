@@ -35,7 +35,7 @@ const itemDataMilk = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Milk() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataMilk.map((item) => (
@@ -53,8 +53,8 @@ export default function TitlebarImageList() {
             actionIcon={
               <div className="links">
                 <div className="storeChange">
-                  <Link to={`/milk/${item.id}`}>
-                  <IconButton component={Link} to={`/milk/${item.id}`}
+                  <Link to={`/Milk/${item.id}`}>
+                  <IconButton component={Link} to={`/Milk/${item.id}`}
                   
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                     aria-label={`info about ${item.title}`} 

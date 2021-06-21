@@ -21,15 +21,34 @@ import aStore from "./page/storePage/store"
 import Router_s from "./page/storePage/router_store"
 import DrinkExample from "./page/drinkPage/adrink"
 import Manage from "./page/ManagePage/manage"
-import Typeblack from "./page/drinkPage/typeblack"
-import Typecof from "./page/drinkPage/typecof"
-import Typeelse from "./page/drinkPage/typeelse"
-import Typeeltea from "./page/drinkPage/typeeltea"
-import Typefru from "./page/drinkPage/typefru"
-import Typegre from "./page/drinkPage/typegre"
-import Typemilk from "./page/drinkPage/typemilk"
-import Typeoo from "./page/drinkPage/typeoo"
-import Typesmo from "./page/drinkPage/typesmo"
+
+import Blackteafact from "./page/drinkPage/blackteafact"
+import Blackinfo from "./page/drinkPage/blackinfo"
+
+import Coffeefact from "./page/drinkPage/coffeefact"
+import Coffeeinfo from "./page/drinkPage/coffeeinfo"
+
+import Elsefact from "./page/drinkPage/elsefact"
+import Elseinfo from "./page/drinkPage/elseinfo"
+
+import Elseteafact from "./page/drinkPage/elseteafact"
+import Elseteainfo from "./page/drinkPage/elseteainfo"
+
+import Fruitfact from "./page/drinkPage/fruitfact"
+import Fruitinfo from "./page/drinkPage/fruitinfo"
+
+import Grefact from "./page/drinkPage/grefact"
+import Greeninfo from "./page/drinkPage/greeninfo"
+
+import Milkfact from "./page/drinkPage/milkfact"
+import Milkiofo from "./page/drinkPage/milkinfo"
+
+import Oolongfact from "./page/drinkPage/oolongfact"
+import Oolonginfo from "./page/drinkPage/oolonginfo"
+
+import Smoothiefact from "./page/drinkPage/smoothiefact"
+import Smoothieinfo from "./page/drinkPage/smoothieinfo"
+
 import Branch from "./page/storePage/branch"
 import Introduce from "./page/storePage/introduce"
 import Menu from "./page/storePage/menu"
@@ -84,29 +103,14 @@ export default function App() {
             <Blacktea/>
           </Route>
 
-          <Route path='/blacktea/:id'>
-            <Router_c/>
-            <Typeblack/>
-          </Route>
-
           <Route path="/allgreentea" >
             <Router_c/>
             <Greentea/>
           </Route>
 
-          <Route path='/greentea/:id'>
-            <Router_c/>
-            <Typegre/>
-          </Route>
-
           <Route path="/alloolong" >
             <Router_c/>
             <Oolong/>
-          </Route>
-
-          <Route path='/oolong/:id'>
-            <Router_c/>
-            <Typeoo/>
           </Route>
           
           <Route path="/allmilk" >
@@ -114,29 +118,14 @@ export default function App() {
             <Milk/>
           </Route>
 
-          <Route path='/milk/:id'>
-            <Router_c/>
-            <Typemilk/>
-          </Route>
-
           <Route path="/allcoffee" >
             <Router_c/>
             <Coffee/>
           </Route>
 
-          <Route path='/coffee/:id'>
-            <Router_c/>
-            <Typecof/>
-          </Route>
-
           <Route path="/allfruit" >
             <Router_c/>
             <Fruit/>
-          </Route>
-
-          <Route path='/fruit/:id'>
-            <Router_c/>
-            <Typefru/>
           </Route>
           
           <Route path="/allsmoothie" >
@@ -144,19 +133,9 @@ export default function App() {
             <Smoothie/>
           </Route>
 
-          <Route path='/smoothie/:id'>
-            <Router_c/>
-            <Typesmo/>
-          </Route>
-
           <Route path="/allelse" >
             <Router_c/>
             <Else/>
-          </Route>
-
-          <Route path='/else/:id'>
-            <Router_c/>
-            <Typeelse/>
           </Route>
 
           <Route path="/allelsetea" >
@@ -164,11 +143,65 @@ export default function App() {
             <Elsetea/>
           </Route>
 
-          <Route path='/elsetea/:id'>
+          <Route path='/Blacktea/:id'>
             <Router_c/>
-            <Typeeltea/>
-          </Route>
+            <Blackteafact/>
+            <Blackinfo/>
+            </Route>
+
+            <Route path='/Greentea/:id'>
+            <Router_c/>
+            <Grefact/>
+            <Greeninfo/>
+            </Route>
+
+            <Route path='/Oolong/:id'>
+            <Router_c/>
+            <Oolongfact/>
+            <Oolonginfo/>
+            </Route>
+
+            <Route path='/Oolong/:id'>
+            <Router_c/>
+            <Oolongfact/>
+            <Oolonginfo/>
+            </Route>
+
+            <Route path='/Coffee/:id'>
+            <Router_c/>
+            <Coffeefact/>
+            <Coffeeinfo/>
+            </Route>
+
+            <Route path='/Else/:id'>
+            <Router_c/>
+            <Elsefact/>
+            <Elseinfo/>
+            </Route>
+
+            <Route path='/Elsetea/:id'>
+            <Router_c/>
+            <Elseteafact/>
+            <Elseteainfo/>
+            </Route>
+
+            <Route path='/Fruit/:id'>
+            <Router_c/>
+            <Fruitfact/>
+            <Fruitinfo/>
+            </Route>
         
+            <Route path='/Milk/:id'>
+            <Router_c/>
+            <Milkfact/>
+            <Milkiofo/>
+            </Route>
+
+            <Route path='/Smoothie/:id'>
+            <Router_c/>
+            <Smoothiefact/>
+            <Smoothieinfo/>
+            </Route>
       </div>
     </Router>
   );

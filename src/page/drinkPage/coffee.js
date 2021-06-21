@@ -35,7 +35,7 @@ const itemDataCoffee = [];
     }
   });
 
-export default function TitlebarImageList() {
+export default function Coffee() {
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataCoffee.map((item) => (
