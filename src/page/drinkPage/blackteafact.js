@@ -62,11 +62,11 @@ export default function Blackteafact() {
     return (
         <div className={classes.root}>
             <div className="adrinkfact">
-            <h2>原料:&emsp;</h2>
+            <h4>原料:&emsp;</h4>
                     {drinkData.map((item) => (
                         
                         <div>
-                            <h2>{item.fact}&emsp;</h2>
+                            <h4>{item.fact}&emsp;</h4>
                         </div>
                     ))}
                 

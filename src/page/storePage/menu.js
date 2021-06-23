@@ -84,9 +84,6 @@ export default function Menu() {
       }
     });
 
-    console.log(itemDataBlack[0].tittle)
-    console.log(store)
-
     return (
         <div className={classes.root}>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
