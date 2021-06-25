@@ -12,7 +12,7 @@ const itemDataCoffee = [];
   
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_drink_coffee.php',
+    url: 'http://54.172.217.12/api_drink_coffee.php',
     type: 'post',
     cache: false,
     async: false,
@@ -55,9 +55,7 @@ export default function Coffee() {
                 <div className="storeChange">
                   <Link to={`/coffee/${item.id}`}>
                   <IconButton component={Link} to={`/coffee/${item.id}`}
-                  
                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                    aria-label={`info about ${item.title}`} 
                     >
                     <InfoIcon />
                   </IconButton>

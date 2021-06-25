@@ -12,7 +12,7 @@ const itemDataSmo = [];
   
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_drink_ smoothie.php',
+    url: 'http://54.172.217.12/api_drink_smoothie.php',
     type: 'post',
     cache: false,
     async: false,

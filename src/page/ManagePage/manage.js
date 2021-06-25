@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-export default function SignIn(){
+export default function Manage(){
   return(
     <>
-    <h1>hello</h1>
-    <a href = "http://54.88.4.245/webmaster/login.php">Login</a>
+    <h1>hi</h1>
+    <a href = "http://54.172.217.12/webmaster/login.php">Login</a>
     </>
   )
 }

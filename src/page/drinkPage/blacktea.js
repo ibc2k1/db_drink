@@ -8,33 +8,6 @@ import InfoIcon from '@material-ui/icons/Info';
 import $ from "jquery";
 import { Link } from "react-router-dom";
 
-const itemDataBlack = [];
-  
-  $.ajax(
-  {
-    url: 'http://54.88.4.245/api_drink_blacktea.php',
-    type: 'post',
-    cache: false,
-    async: false,
-    dataType: 'json',
-    success: function(data)
-    {
-      if(data)
-      {
-        $.each(data, function(i, item)
-        {
-          var inner = 
-          {
-            img : item.Picture,
-            title : item.D_NAME,
-            id : item.D_ID,
-          }
-          itemDataBlack.push(inner);
-        });
-      }
-    }
-  });
-
 export function aStore(id) {
   window.console.log("click");
   window.console.log(id);
@@ -42,6 +15,35 @@ export function aStore(id) {
 }
 
 export default function Blacktea() {
+  
+  const itemDataBlack = [];
+    
+    $.ajax(
+    {
+      url: `http://54.172.217.12/api_drink_blacktea.php`,
+      type: 'post',
+      cache: false,
+      async: false,
+      dataType: 'json',
+      success: function(data)
+      {
+        if(data)
+        {
+          $.each(data, function(i, item)
+          {
+            var inner = 
+            {
+              img : item.Picture,
+              title : item.D_NAME,
+              id : item.D_ID,
+            }
+            itemDataBlack.push(inner);
+          });
+        }
+      }
+    });
+  
+
   return (
     <center><ImageList sx={{ width: "80%", height: "90%" }} cols={5} gap={60}>
       {itemDataBlack.map((item) => (
@@ -62,8 +64,6 @@ export default function Blacktea() {
                   <Link to={`/blacktea/${item.id}`}>
                     <IconButton component={Link} to={`/blacktea/${item.id}`}
                       sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                      aria-label={`info about ${item.title}`}
-                      onClick={ () => { aStore(item.id);} }
                     >
                 <InfoIcon />
               </IconButton>

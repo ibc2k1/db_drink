@@ -1,11 +1,5 @@
 import $ from 'jquery';
 import React from 'react';
-import { withStyles } from '@material-ui/styles';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import "./storeintro.css";
 
 export default function StoreIntro() {
@@ -18,7 +12,7 @@ export default function StoreIntro() {
 
   $.ajax(
   {
-    url: 'http://54.88.4.245/api_store_name.php ',
+    url: 'http://54.172.217.12/api_store_name.php ',
     type: 'post',
     cache: false,
     async: false,

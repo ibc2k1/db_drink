@@ -1,12 +1,6 @@
-import ImageList from '@material-ui/core/ImageList';
 import $ from 'jquery';
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
-import Accordion from '@material-ui/core/Accordion';
-import AccordionDetails from '@material-ui/core/AccordionDetails';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const Styles = theme => ({
   root: {
@@ -31,7 +25,7 @@ export default function Fruitfact() {
     const drinkData = [];
     $.ajax(
     {
-        url: ' http://54.88.4.245/api/drink/fruit_fact.php ',
+        url: ' http://54.172.217.12/api/drink/fruit_fact.php ',
         type: 'post',
         cache: false,
         async: false,

@@ -1,4 +1,3 @@
-import ImageList from '@material-ui/core/ImageList';
 import $ from 'jquery';
 import React from 'react';
 import Button from "@material-ui/core/Button";
@@ -12,7 +11,7 @@ export default function Milkinfo() {
     const drinkDataB = [];
     $.ajax(
     {
-        url: 'http://54.88.4.245/api/drink/milk_intro.php',
+        url: 'http://54.172.217.12/api/drink/milk_intro.php',
         type: 'post',
         cache: false,
         async: false,
@@ -41,13 +40,18 @@ export default function Milkinfo() {
             }
         }
     });
+    var adrinkname = drinkDataB[0].name;
+    var adrinkpic = drinkDataB[0].img;
+    var adrinkid = drinkDataB[0].sid;
 
     return (
         
         <div>
-            <h1>{drinkDataB[0].name}</h1>
-            <img className="drinkimg" src={drinkDataB[0].img} width="20%"/>
-            
+            <h1>{adrinkname}</h1>
+            <img className="drinkimg" src={adrinkpic} width="20%"/>
+            <Link to={`/storedetail/${adrinkid}`}>
+                <Button className="shop">查看店家</Button>
+            </Link>
             <table class="tb1">
             <tr>
             <th id="name" colspan="3">商品資訊</th>

@@ -13,7 +13,6 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
-import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
 
 
@@ -38,7 +37,7 @@ export function aStore(id) {
     return id;
   }
 
-export default function Menu() {
+export default function StoreMenu() {
     const classes = withStyles(Styles);
     const [expanded, setExpanded] = React.useState(false);
 
@@ -50,13 +49,11 @@ export default function Menu() {
 
     var store = pathname[2];
 
-    var num = 0;
-
     const itemDataBlack = [];
 
     $.ajax(
     {
-      url: 'http://54.88.4.245/api_store_menu.php',
+      url: 'http://54.172.217.12/api_store_menu.php',
       type: 'post',
       cache: false,
       async: false,
@@ -75,8 +72,8 @@ export default function Menu() {
                 did:item.D_ID,
                 drink:item.D_Name,
                 Img:item.Picture,
+                type:item.Type,
               }
-              num=num+1;
               itemDataBlack.push(inner);
             }
           });
@@ -105,7 +102,13 @@ export default function Menu() {
                             actionIcon={
                                 <div className="links">
                                     <div className="storeChange">
-                                    
+                                      <Link to={`/${item.type}/${item.id}`}>
+                                          <IconButton component={Link} to={`/${item.type}/${item.did}`}
+                                            sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                                          >
+                                            <InfoIcon />
+                                          </IconButton>
+                                      </Link>
                                     </div>
                                 </div>
                             }

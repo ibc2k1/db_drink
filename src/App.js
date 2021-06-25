@@ -1,7 +1,6 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./page/homePage/home";
-import Drink_c from "./page/drinkPage/drinkC";
+import { BrowserRouter as Router,  Route } from "react-router-dom";
+import HomePage from "./page/homePage/home";
 import Blacktea from "./page/drinkPage/blacktea";
 import Greentea from "./page/drinkPage/greentea";
 import Oolong from "./page/drinkPage/oolong";
@@ -13,11 +12,8 @@ import Else from "./page/drinkPage/else";
 import Elsetea from "./page/drinkPage/elsetea"
 import Store_c from "./page/storePage/store";
 import SignIn from "./page/signInPage/sign";
-import List from "./page/listPage/list";
 import Router_c from "./component/router";
 import Router_drink from "./page/drinkPage/router_drink";
-import StoreDetail from "./page/storePage/storedetail"
-import aStore from "./page/storePage/store"
 import Router_s from "./page/storePage/router_store"
 import DrinkExample from "./page/drinkPage/adrink"
 import Manage from "./page/ManagePage/manage"
@@ -51,7 +47,11 @@ import Smoothieinfo from "./page/drinkPage/smoothieinfo"
 
 import Branch from "./page/storePage/branch"
 import Introduce from "./page/storePage/introduce"
-import Menu from "./page/storePage/menu"
+import StoreMenu from "./page/storePage/menutest"
+
+import ControlledOpenSelect from './page/drinkPage/menu'
+import MyContextProvider from './contexts/myContext';
+import Home from './component/home';
 
 export default function App() {
   console.log("hi");
@@ -63,12 +63,13 @@ export default function App() {
 
           <Route exact path="/" >
             <Router_c/>
-            <Home/>
+            <HomePage/>
           </Route>
 
           <Route path="/Drink_c" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
           </Route>
 
           <Route path="/Store_c" >
@@ -81,9 +82,16 @@ export default function App() {
             <Router_c/>
             <Introduce/>
             <Branch/>
-            <Menu/>
+            <StoreMenu/>
           </Route>
 
+          <Route path="/SignIn" >
+            <Router_c/>
+            <br></br>
+            <MyContextProvider>
+              <Home/>
+            </MyContextProvider>
+          </Route>
 
           <Route path="/Manage" >
             <Router_c/>
@@ -92,55 +100,64 @@ export default function App() {
           
           <Route path="/allblacktea" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Blacktea/>
           </Route>
 
           <Route path="/allgreentea" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Greentea/>
           </Route>
 
           <Route path="/alloolong" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Oolong/>
           </Route>
           
           <Route path="/allmilk" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Milk/>
           </Route>
 
           <Route path="/allcoffee" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Coffee/>
           </Route>
 
           <Route path="/allfruit" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Fruit/>
           </Route>
           
           <Route path="/allsmoothie" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Smoothie/>
           </Route>
 
           <Route path="/allelse" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Else/>
           </Route>
 
           <Route path="/allelsetea" >
             <Router_c/>
-            <Router_drink/>
+            <h1>請選擇飲料種類!</h1>
+            <ControlledOpenSelect/>
             <Elsetea/>
           </Route>
 

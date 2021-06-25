@@ -1,7 +1,8 @@
-import React from "react";
+import * as React from "react"
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import { RestaurantMenu } from "@material-ui/icons";
+import Blacktea from "./blacktea";
+
 
 
 export default function Router_drink() {
@@ -13,7 +14,7 @@ export default function Router_drink() {
         <center><tr>
           <Link to="/allblacktea">
          
-          <Button onclick="style.display = 'none'">紅茶</Button>
+          <Button onClick={ () => { Blacktea('blacktea');} }>紅茶</Button>
           </Link>
           <Link to="/allgreentea">
             <Button>綠茶</Button>
