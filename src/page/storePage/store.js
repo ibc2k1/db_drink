@@ -11,7 +11,7 @@ const itemDataShop = [];
   
   $.ajax(
   {
-    url: 'http://54.172.217.12/api_store_all.php ',
+    url: 'http://100.24.235.73/api_store_all.php ',
     type: 'post',
     cache: false,
     async: false,                                 

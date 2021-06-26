@@ -12,7 +12,7 @@ const itemDataOolong = [];
   
   $.ajax(
   {
-    url: 'http://54.172.217.12/api_drink_oolongtea.php',
+    url: 'http://100.24.235.73/api_drink_oolongtea.php',
     type: 'post',
     cache: false,
     async: false,

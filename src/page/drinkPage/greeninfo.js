@@ -11,7 +11,7 @@ export default function Greeninfo() {
     const drinkDataB = [];
     $.ajax(
     {
-        url: 'http://54.172.217.12/api/drink/greentea_intro.php ',
+        url: 'http://100.24.235.73/api/drink/greentea_intro.php ',
         type: 'post',
         cache: false,
         async: false,

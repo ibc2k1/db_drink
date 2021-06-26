@@ -12,7 +12,7 @@ export default function StoreIntro() {
 
   $.ajax(
   {
-    url: 'http://54.172.217.12/api_store_name.php ',
+    url: 'http://100.24.235.73/api_store_name.php ',
     type: 'post',
     cache: false,
     async: false,

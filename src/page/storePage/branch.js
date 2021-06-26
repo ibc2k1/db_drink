@@ -41,7 +41,7 @@ export default function Branch() {
     const storeData = [];
     $.ajax(
     {
-        url: 'http://54.172.217.12/api_branch.php ',
+        url: 'http://100.24.235.73/api_branch.php ',
         type: 'post',
         cache: false,
         async: false,

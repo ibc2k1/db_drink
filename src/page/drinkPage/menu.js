@@ -41,7 +41,7 @@ export default function ControlledOpenSelect() {
 
   $.ajax(
     {
-      url: `http://54.172.217.12/api_type.php`,
+      url: `http://100.24.235.73/api_type.php`,
       type: 'post',
       cache: false,
       async: false,
@@ -55,6 +55,7 @@ export default function ControlledOpenSelect() {
             var inner = 
             {
               title : item.type,
+              chname : item.c_name,
             }
             names.push(inner);
           });
@@ -85,7 +86,7 @@ export default function ControlledOpenSelect() {
             {names.map((item) => (
               <Link to={`/all${item.title}`}>
                 <MenuItem value={item.title} component={Link} to={`/all${item.title}`} >
-                  {item.title}
+                  {item.chname}
                 </MenuItem>
                 </Link>
             ))}

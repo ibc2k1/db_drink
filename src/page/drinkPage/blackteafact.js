@@ -25,7 +25,7 @@ export default function Blackteafact() {
     const drinkData = [];
     $.ajax(
     {
-        url: ' http://54.172.217.12/api/drink/blacktea_fact.php',
+        url: ' http://100.24.235.73/api/drink/blacktea_fact.php',
         type: 'post',
         cache: false,
         async: false,

@@ -20,7 +20,7 @@ export default function Blacktea() {
     
     $.ajax(
     {
-      url: `http://54.172.217.12/api_drink_blacktea.php`,
+      url: `http://100.24.235.73/api_drink_blacktea.php`,
       type: 'post',
       cache: false,
       async: false,

@@ -4,7 +4,7 @@ export const MyContext = createContext();
 
 // Define the base URL
 const Axios = axios.create({
-    baseURL: 'http://54.172.217.12/php-login-registration-api/',
+    baseURL: 'http://100.24.235.73/php-login-registration-api/',
 });
 
 class MyContextProvider extends Component{

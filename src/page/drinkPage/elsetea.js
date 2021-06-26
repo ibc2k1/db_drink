@@ -12,7 +12,7 @@ const itemDataElsetea = [];
   
   $.ajax(
   {
-    url: 'http://54.172.217.12/api_drink_othertea.php',
+    url: 'http://100.24.235.73/api_drink_othertea.php',
     type: 'post',
     cache: false,
     async: false,

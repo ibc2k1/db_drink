@@ -14,7 +14,7 @@ var num = 0;
 const itemDataBlack =[];
   $.ajax(
   {
-    url: 'http://54.172.217.12/api_drink_intro.php ',
+    url: 'http://100.25.177.164/api_drink_intro.php ',
     type: 'post',
     cache: false,
     async: false,
