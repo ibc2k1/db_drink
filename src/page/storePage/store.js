@@ -49,8 +49,8 @@ export default function Store_c() {
       {itemDataShop.map((item) => (
         <ImageListItem key={item.img}> 
           <img
-            srcSet={`${item.img}?w=248&fit=crop&auto=format 1x,
-                ${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            srcSet={`${item.img}?w=248&fit=crop&auto=format 1x, 
+                ${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`} //圖片列表
             alt={item.title}
             loading="lazy"
           />
